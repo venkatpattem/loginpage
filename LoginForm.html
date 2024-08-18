@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: lightblue
+        }
+
+        h1 {
+            text-align: center
+        }
+
+        .loginWrapper {
+            display: grid;
+            width: 60%;
+            height: 350px;
+            grid-template-columns: 50% 50%;
+            margin: auto;
+            background-color: white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+       img {
+            width: 346px;
+            height: 350px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            
+        }
+
+        .rightSideWrapper {
+            margin: 80px auto;
+        }
+
+        .usernameStyle {
+            margin: 0px 0px 20px 0px;
+        }
+
+        .inputstyle {
+            height: 24px;
+            width: 240px;
+            border: 2px solid burlywood;
+            outline-color: burlywood;
+            border-radius: 8px;
+        }
+
+        .buttonWrapper {
+            margin: 0px 0px 0px 82px;
+        }
+
+        .buttonStyle {
+            width: 100px;
+            height: 32px;
+            background-color: cornflowerblue;
+            color: white;
+            border-radius: 18px;
+            border: none;
+        }
+
+        .buttonStyle:hover {
+            background-color: red;
+            cursor: pointer;
+            font-size: 16px
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: white;
+            }
+
+            .leftStyle {
+                grid-column: 1 / 2;
+            }
+
+            img {
+                width: 346px;
+                height: 340px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+            .rightSideWrapper {
+                grid-column: 1 / 2;
+                margin: 30px 46px;
+            }
+            .loginWrapper {
+            display: grid;
+            width: 60%;
+            height: 350px;
+            grid-template-columns: 50% 50%;
+            margin: 8px;
+            background-color: white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login Page</h1>
+    <div class="loginWrapper">
+        <div class="leftStyle">
+            <img src="D:\html_examples\left_image.jpg">
+        </div>
+
+        <div class="rightSideWrapper">
+
+            <div class="usernameStyle">
+                <input type="text" placeholder="username" placeholder class="inputstyle" />
+            </div>
+
+            <div class="usernameStyle">
+                <input type="text" placeholder="password" class="inputstyle" />
+            </div>
+
+            <div class="buttonWrapper">
+                <button class="buttonStyle">Login</login>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
